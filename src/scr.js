@@ -43,7 +43,7 @@ const data = {
 headerbar();
 
 var length = Object.keys(data).length;
-console.log(length); // 5
+//console.log(length); // 5
 
 for (let i = 1; i <= length; i++) {
   // const element = array[i];
@@ -53,7 +53,7 @@ for (let i = 1; i <= length; i++) {
   $(function () {
     $(".skills").append("<div class='html slill-div'><h3 class='skills-titel'>" + data[at].name + "</h3><ul class='bar'><li style='width:" + data[at].value + "%;'></li></ul></div >");
 
-    console.log(data[at].name + "を追加しました");
+    //console.log(data[at].name + "を追加しました");
     
   });
 }
