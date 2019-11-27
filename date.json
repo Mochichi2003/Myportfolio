@@ -1,0 +1,19 @@
+{
+  "name" : "skills",
+  "version" : "0.1α",
+  "skills" : [
+    {
+      "name" : "TEST",
+      "value" : 55
+    },
+    {
+      "name": "TEST2",
+      "value": 10
+    },
+    {
+      "name": "TES3",
+      "value": 90
+    }
+  ]
+}
+

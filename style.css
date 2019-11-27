@@ -1,0 +1,208 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  text-align: center;
+}
+
+main {
+  width: 100%;
+  /* background: #0f0; */
+}
+
+#TopLog {
+  text-align: center;
+  /* background-image: url(img/背景画像.jpg); */
+  background-attachment: inherit;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  /* background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%); */
+  background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.15) 0%,
+      rgba(0, 0, 0, 0.15) 100%
+    ),
+    radial-gradient(
+        at top center,
+        rgba(255, 255, 255, 0.4) 0%,
+        rgba(0, 0, 0, 0.4) 120%
+      )
+      #989898;
+  background-blend-mode: multiply, multiply;
+  height: 100vh;
+  /* width: 100vh; */
+  position: relative;
+}
+
+#TopLog .titel {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  margin: 0;
+  font-size: 64px;
+  max-width: 900px;
+}
+
+.Top-link {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  /* transform: scale(2); */
+  /* width: 34px; */
+  margin: 0;
+
+  transition: 300ms;
+  /* transition-timing-function: ease; */
+  /* filter: drop-shadow(0px 0px 0px rgba(58, 58, 58, 0.6)); */
+}
+
+.Top-link:hover {
+  filter: drop-shadow(8px 8px 4px rgba(58, 58, 58, 0.6));
+  fill: #00acee;
+  -webkit-transform: translate(-50%, -50%)scale(1.5);
+  transform: translate(-50%, -50%)scale(1.5);
+}
+
+.Top-link:nth-of-type(1) {
+  position: absolute;
+  left: 100px
+}
+.Top-link:nth-of-type(2) {
+  position: absolute;
+  left: 33.34px;
+}
+.Top-link:nth-of-type(3) {
+  position: absolute;
+  left: -33.34px;
+}
+.Top-link:nth-of-type(4){
+  position: absolute;
+  left: -100px;
+}
+
+.Twitter-svg-icon {
+  fill: #000;
+}
+
+.sns-icon{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+
+.Works {
+  max-width: 800px;
+  margin: auto;
+}
+
+.NphotClub-img {
+  max-width: 600px;
+  width: 100%;
+  border-radius: 40px;
+}
+
+.NphotClub {
+  border: solid #333 2px;
+  border-radius: 40px;
+}
+.worls {
+  border-bottom: solid rgb(102, 102, 102) 1px;
+  transition: 300ms;
+}
+
+.worls:hover {
+  box-shadow: 5px 5px 20px rgba(58, 58, 58, 0.6);
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.slill-div {
+  max-width: 800px;
+  margin: auto;
+}
+.slill-div .bar {
+  background: #d8d8d8;
+  height: 20px;
+  border-radius: 10px;
+  padding: 0;
+  margin: 6px 0;
+}
+
+.slill-div .bar li {
+  background: #71cbff;
+  background-image: radial-gradient(
+    circle 248px at center,#16d9e3 0%,#20c7ec 47%,#37b2f5 100%
+  );
+  height: 20px;
+  list-style: none;
+  border-radius: 10px;
+}
+.Comment {
+  list-style: none;
+}
+.syukan {
+  color: #f0f0f0;
+  font-size: 12px;
+}
+.skills-titel {
+  margin-bottom: 5px;
+  margin-top: 30px;
+}
+
+header {
+  position: fixed;
+  z-index: 100;
+  background: #fff;
+  width: 100vw;
+  height: 47px;
+  top: -50px;
+  box-shadow: 0px 0px 5px #68676793;
+  transition: 300ms;
+  
+}
+
+header button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  appearance: none;
+  color: #000;
+  text-decoration: none;
+  font-size: 28px;
+  margin: 6px 20px;
+  border-left: #000;
+  transition: 300ms;
+}
+
+header button:hover {
+  text-decoration: none;
+  transform: scale(1.2);
+}
+
+.mochi-img{
+  border: 3px solid #000;
+  max-width: 150px;
+  border-radius: 25%;
+}
+
+footer{
+  background: rgb(97, 97, 97);
+  height: 100px;
+}
