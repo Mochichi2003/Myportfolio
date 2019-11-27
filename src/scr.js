@@ -2,7 +2,7 @@ const data = {
   skill1: {
     name: "HTML",
     value :80,
-    Comment:"殆どのタグについては理解できています",
+    Comment:"ああ",
   },
   skill2: {
     name: "CSS",
