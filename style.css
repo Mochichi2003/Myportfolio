@@ -1,11 +1,14 @@
 body {
   margin: 0;
   padding: 0;
+  
+  font-family: 'ヒラギノ角ゴシック','Hiragino Sans','Arial','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',sans-serif;
 }
 
 * {
   text-align: center;
-  font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic', 
+  /* font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic',  */
+  
 }
 
 main {
@@ -177,14 +180,17 @@ header button {
   color: #000;
   text-decoration: none;
   font-size: 28px;
-  margin: 6px 20px;
+  padding: 6px 20px;
   border-left: #000;
   transition: 300ms;
 }
 
+
 header button:hover {
   text-decoration: none;
-  transform: scale(1.2);
+  /* transform: scale(1.2); */
+
+  text-shadow: 1px 1px 5px  #818181;
 }
 
 .mochi-img{

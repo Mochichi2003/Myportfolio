@@ -42,6 +42,8 @@ const data = {
 }
 headerbar();
 
+
+
 var length = Object.keys(data).length;
 //console.log(length); // 5
 
@@ -58,16 +60,24 @@ for (let i = 1; i <= length; i++) {
   });
 }
 
+var offsetWorks;
+var offsetskills;
+var offsetprofile;
+var Works;
+var skills;
+var profile;
 // ページの特定の位置にスクロールする
 $(function () { 
-  const offsetWorks = $('.Works').offset();//worksの位置を取得
-  const offsetskills = $('.skills').offset();//skillsの位置を取得
-  const offsetprofile = $('.profile').offset();//profileの位置を取得
-  const Works = offsetWorks.top;//worksの位置を取得
-  const skills = offsetskills.top;//skillsの位置を取得
-  const profile = offsetprofile.top;//profileの位置を取得
+  offsetWorks = $('.Works').offset();//worksの位置を取得
+  offsetskills = $('.skills').offset();//skillsの位置を取得
+  offsetprofile = $('.profile').offset();//profileの位置を取得
+  Works = offsetWorks.top;//worksの位置を取得
+  skills = offsetskills.top;//skillsの位置を取得
+  profile = offsetprofile.top;//profileの位置を取得
   console.log(offsetWorks.top + "offset");
   
+  
+
   $('.header-Works').on('click', function () {
     $(window).scrollTop(Works-50);
   });
@@ -81,14 +91,38 @@ $(function () {
     $(window).scrollTop(0);
   });
 
+
 })
 $(window).scroll(function () {
   // console.log($(this).scrollTop() + 'px');
+  posX = window.scrollY;
+  // console.log(posX);
+  if (Works - 50 > posX > 0 ) {
+    // console.log("TOP!!!");
+    $('header button').css('border-bottom', '0');
+    $('.header-top').css('border-bottom', '#555 3px solid');
+  } else if (skills - 50 > posX) {
+    // console.log("WORKS!!!");
+    $('header button').css('border-bottom', '0');
+    $('.header-Works').css('border-bottom', '#555 3px solid');
+  } else if (profile - 50 > posX) {
+    // console.log("skills!!!!");
+    $('header button').css('border-bottom', '0');
+    $('.header-skills').css('border-bottom', '#555 3px solid');
+  } else if (profile - 50 < posX) {
+    // console.log("profile!!!!");
+    $('header button').css('border-bottom', '0');
+    $('.header-Profile').css('border-bottom', '#555 3px solid');
+  }
+
+
+
+  
   headerbar();
 });
 
 function headerbar(params) {
-  if ($(this).scrollTop() <= 20) {
+  if ($(this).scrollTop() <= 10) {
     console.log($(this).scrollTop());
     $("header").css("top", "-50px");
   } else {
