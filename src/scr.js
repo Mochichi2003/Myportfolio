@@ -97,19 +97,19 @@ $(window).scroll(function () {
   // console.log($(this).scrollTop() + 'px');
   posX = window.scrollY;
   // console.log(posX);
-  if (Works - 50 > posX > 0 ) {
+  if (Works - 90 > posX > 0 ) {
     // console.log("TOP!!!");
     $('header button').css('border-bottom', '0');
     $('.header-top').css('border-bottom', '#555 3px solid');
-  } else if (skills - 50 > posX) {
+  } else if (skills - 90 > posX) {
     // console.log("WORKS!!!");
     $('header button').css('border-bottom', '0');
     $('.header-Works').css('border-bottom', '#555 3px solid');
-  } else if (profile - 50 > posX) {
+  } else if (profile - 90 > posX) {
     // console.log("skills!!!!");
     $('header button').css('border-bottom', '0');
     $('.header-skills').css('border-bottom', '#555 3px solid');
-  } else if (profile - 50 < posX) {
+  } else if (profile - 90 < posX) {
     // console.log("profile!!!!");
     $('header button').css('border-bottom', '0');
     $('.header-Profile').css('border-bottom', '#555 3px solid');
@@ -121,9 +121,10 @@ $(window).scroll(function () {
   headerbar();
 });
 
+//ヘッダーを引っ込めるたり出したりするところ
 function headerbar(params) {
   if ($(this).scrollTop() <= 10) {
-    console.log($(this).scrollTop());
+    // console.log($(this).scrollTop());
     $("header").css("top", "-50px");
   } else {
     $("header").css("top", "0px");
@@ -133,24 +134,3 @@ function headerbar(params) {
 
 // メールを暗号化
 
-//   function converter(M) {
-//     var str = "", str_as = "";
-//     for (var i = 0; i < M.length; i++) {
-//       str_as = M.charCodeAt(i);
-//       str += String.fromCharCode(str_as + 1);
-//     }
-//     return str;
-//   }
-// function mail_to(k_1, k_2) {
-//   eval(String.fromCharCode(108, 111, 99, 97, 116, 105, 111, 110, 46, 104, 114, 101, 102, 32,
-//     61, 32, 39, 109, 97, 105, 108, 116, 111, 58)
-//     + escape(k_1) +
-//     converter(String.fromCharCode(108, 110, 120, 116, 113, 116, 114, 116, 115, 110, 63, 102, 108, 96, 104, 107, 45, 98, 110, 108,
-//       62, 114, 116, 97, 105, 100, 98, 115, 60))
-//     + escape(k_2) + "'");
-// }
-// document.write('<a href=JavaScript:mail_to("","")><img src="svg/メールの無料アイコンその8.svg" alt="メール"><\/a>');
-// $(function () {
-//   $(".sns-icon").append('<a href=JavaScript:mail_to("","")><img src="svg/メールの無料アイコンその8.svg" alt="メール"><\/a>');
-// });
-// //-->
