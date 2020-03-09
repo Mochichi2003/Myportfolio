@@ -247,3 +247,15 @@ footer {
   margin-top: 30px;
   padding: 10px;
 }
+body > main > div.Works > h2:nth-child(1){
+  font-size: 40px;
+  margin: 0;
+  font-weight: 900;
+}
+body > main > div.Works > h3:nth-child(2){
+  font-size: 25px;
+  margin: 0;
+  border-top: #000 solid 1px;
+  margin-top: 40px;
+  font-weight: 900;
+}
