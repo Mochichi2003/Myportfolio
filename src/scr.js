@@ -125,11 +125,12 @@ $(window).scroll(function () {
 function headerbar(params) {
   if ($(this).scrollTop() <= 10) {
     // console.log($(this).scrollTop());
-    $("header").css("top", "-50px");
+    $("header").css("top", "-55px");
   } else {
     $("header").css("top", "0px");
   }
 }
+
 
 
 

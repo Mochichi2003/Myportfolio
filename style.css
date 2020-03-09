@@ -1,14 +1,23 @@
+* {
+  font-family: source-han-sans-japanese, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  text-align: center;
+}
 body {
   margin: 0;
   padding: 0;
 
-  font-family: "ヒラギノ角ゴシック", "Hiragino Sans", "Arial",
-    "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", sans-serif;
+  /* font-family: "ヒラギノ角ゴシック", "Hiragino Sans", "Arial","Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", sans-serif; */
 }
-
-* {
-  text-align: center;
-  /* font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic',  */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: source-han-sans-japanese, sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 main {
@@ -172,7 +181,7 @@ header {
   z-index: 100;
   background: #fff;
   width: 100vw;
-  height: 47px;
+  height: 55px;
   top: -50px;
   box-shadow: 0px 0px 5px #68676793;
   transition: 300ms;
@@ -232,4 +241,9 @@ footer {
   height: 400px;
   object-fit: cover;
   border-radius: 10px;
+}
+#copyright{
+  color: #333;
+  margin-top: 30px;
+  padding: 10px;
 }
