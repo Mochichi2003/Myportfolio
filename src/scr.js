@@ -132,5 +132,4 @@ function headerbar(params) {
 }
 
 
-// メールを暗号化
 

@@ -1,14 +1,14 @@
 body {
   margin: 0;
   padding: 0;
-  
-  font-family: 'ヒラギノ角ゴシック','Hiragino Sans','Arial','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',sans-serif;
+
+  font-family: "ヒラギノ角ゴシック", "Hiragino Sans", "Arial",
+    "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", sans-serif;
 }
 
 * {
   text-align: center;
   /* font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic',  */
-  
 }
 
 main {
@@ -23,9 +23,16 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0;
-  
-  background: linear-gradient(to bottom, #D5DEE7 0%, #E8EBF2 50%, #E2E7ED 100%), linear-gradient(to bottom, rgba(0,0,0,0.02) 50%, rgba(255,255,255,0.02) 61%, rgba(0,0,0,0.02) 73%), linear-gradient(33deg, rgba(255,255,255,0.20) 0%, rgba(0,0,0,0.20) 100%);
-  background-blend-mode: normal,color-burn;
+
+  background: linear-gradient(to bottom, #d5dee7 0%, #e8ebf2 50%, #e2e7ed 100%),
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.02) 50%,
+      rgba(255, 255, 255, 0.02) 61%,
+      rgba(0, 0, 0, 0.02) 73%
+    ),
+    linear-gradient(33deg, rgba(255, 255, 255, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%);
+  background-blend-mode: normal, color-burn;
   height: 100vh;
   /* width: 100vh; */
   position: relative;
@@ -60,13 +67,13 @@ main {
 .Top-link:hover {
   filter: drop-shadow(8px 8px 4px rgba(58, 58, 58, 0.6));
   fill: #00acee;
-  -webkit-transform: translate(-50%, -50%)scale(1.5);
-  transform: translate(-50%, -50%)scale(1.5);
+  -webkit-transform: translate(-50%, -50%) scale(1.5);
+  transform: translate(-50%, -50%) scale(1.5);
 }
 
 .Top-link:nth-of-type(1) {
   position: absolute;
-  left: 100px
+  left: 100px;
 }
 .Top-link:nth-of-type(2) {
   position: absolute;
@@ -76,7 +83,7 @@ main {
   position: absolute;
   left: -33.34px;
 }
-.Top-link:nth-of-type(4){
+.Top-link:nth-of-type(4) {
   position: absolute;
   left: -100px;
 }
@@ -85,14 +92,13 @@ main {
   fill: #000;
 }
 
-.sns-icon{
+.sns-icon {
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-
 
 .Works {
   max-width: 800px;
@@ -140,7 +146,10 @@ a:hover {
 .slill-div .bar li {
   background: #71cbff;
   background-image: radial-gradient(
-    circle 248px at center,#16d9e3 0%,#20c7ec 47%,#37b2f5 100%
+    circle 248px at center,
+    #16d9e3 0%,
+    #20c7ec 47%,
+    #37b2f5 100%
   );
   height: 20px;
   list-style: none;
@@ -167,7 +176,6 @@ header {
   top: -50px;
   box-shadow: 0px 0px 5px #68676793;
   transition: 300ms;
-  
 }
 
 header button {
@@ -185,22 +193,43 @@ header button {
   transition: 300ms;
 }
 
-
 header button:hover {
   text-decoration: none;
   /* transform: scale(1.2); */
 
-  text-shadow: 1px 1px 5px  #818181;
+  text-shadow: 1px 1px 5px #818181;
 }
 
-.mochi-img{
+.mochi-img {
   border: 3px solid #000;
   max-width: 150px;
   border-radius: 25%;
 }
 
-footer{
-  background: linear-gradient(to bottom, #D5DEE7 0%, #E8EBF2 50%, #E2E7ED 100%), linear-gradient(to bottom, rgba(0,0,0,0.02) 50%, rgba(255,255,255,0.02) 61%, rgba(0,0,0,0.02) 73%), linear-gradient(33deg, rgba(255,255,255,0.20) 0%, rgba(0,0,0,0.20) 100%);
-  background-blend-mode: normal,color-burn;
+footer {
+  background: linear-gradient(to bottom, #d5dee7 0%, #e8ebf2 50%, #e2e7ed 100%),
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.02) 50%,
+      rgba(255, 255, 255, 0.02) 61%,
+      rgba(0, 0, 0, 0.02) 73%
+    ),
+    linear-gradient(33deg, rgba(255, 255, 255, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%);
+  background-blend-mode: normal, color-burn;
   height: 100px;
+}
+.phots .photsImg {
+  /* float: left; */
+  display: inline-block;
+}
+.phots div {
+  display: inline-block;
+  width: 300px;
+  margin: none;
+}
+.photImg {
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
 }
