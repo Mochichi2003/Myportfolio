@@ -71,7 +71,6 @@ main {
   transition: 300ms;
   /* transition-timing-function: ease; */
   /* filter: drop-shadow(0px 0px 0px rgba(58, 58, 58, 0.6)); */
-
 }
 
 .Top-link:hover {
@@ -245,38 +244,80 @@ footer {
   object-fit: cover;
   border-radius: 10px;
 }
-#copyright{
+#copyright {
   color: #333;
   margin-top: 30px;
   padding: 10px;
 }
-body > main > div.Works > h2:nth-child(1){
+body > main > div.Works > h2:nth-child(1) {
   font-size: 40px;
   margin: 0;
   font-weight: 900;
 }
-body > main > div.Works > h3:nth-child(2){
+body > main > div.Works > h3:nth-child(2) {
   font-size: 25px;
   margin: 0;
   border-top: #000 solid 1px;
   margin-top: 40px;
   font-weight: 900;
 }
-@media screen and (max-width:460px){
-  body > header{
+@media screen and (max-width: 460px) {
+  body > header {
     display: none;
     top: -400px;
   }
-  #TopLog,#TopLog > img{
+  #TopLog,
+  #TopLog > img {
     width: 100%;
   }
 }
 
-body > main > div.Works > div:nth-child(8) > a > img{
+body > main > div.Works > div:nth-child(8) > a > img {
   border-radius: 2px;
 }
 
-body > main > div.Works > div:nth-child(8):hover{
+#ProjectN:hover {
   box-shadow: 0px 0px 10px rgba(58, 58, 58, 0.335);
   transform: scale(1);
+}
+.Works > div {
+  padding-bottom: 10px;
+}
+.Works > div > p:hover {
+  text-decoration: none;
+}
+.Works > div > p > span {
+  background: #219fda;
+  margin: 3px;
+  padding: 2px 10px;
+
+  color: #fff;
+  border-radius: 4px;
+}
+.profile{
+  width: 800px;
+  margin: auto;
+}
+.profile div p {
+  text-align: left;
+}
+.profile div img {
+  float: left;
+  box-shadow: 0px 0px 10px #3a3a3a60;
+  border-radius: 3px;
+  width: 300px;
+  margin-right: 10px;
+}
+.clearfix:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#mediaImageWrapper-1 > div > a > figure > img{
+  transform: scale(0.3);
+}
+
+.photos{
+  filter: drop-shadow(0px 0px 2px #3a3a3ab7);
 }
