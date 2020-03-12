@@ -132,7 +132,7 @@ main {
 }
 
 .worls:hover {
-  box-shadow: 5px 5px 10px rgba(58, 58, 58, 0.6);
+  box-shadow: 7px 7px 10px 3px rgba(58, 58, 58, 0.808);
   transform: scale(1.02);
 }
 
@@ -275,11 +275,8 @@ body > main > div.Works > h3:nth-child(2){
 body > main > div.Works > div:nth-child(8) > a > img{
   border-radius: 2px;
 }
-.Works > div{
 
-
-}
-
-.Works > div:hover{
-
+body > main > div.Works > div:nth-child(8):hover{
+  box-shadow: 0px 0px 10px rgba(58, 58, 58, 0.335);
+  transform: scale(1);
 }
