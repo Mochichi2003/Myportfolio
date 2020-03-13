@@ -321,3 +321,9 @@ body > main > div.Works > div:nth-child(8) > a > img {
 .photos{
   filter: drop-shadow(0px 0px 2px #3a3a3ab7);
 }
+
+.クラス名:hover{
+  transform: scale(1.1);
+  filter: drop-shadow(3 3, 3 #777);
+}
+こんな感じでcssでホバーしたらタランスフォームで大きくしてdrop-shadowで影を出しています

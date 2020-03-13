@@ -125,7 +125,7 @@ $(window).scroll(function () {
 function headerbar(params) {
   if ($(this).scrollTop() <= 10) {
     // console.log($(this).scrollTop());
-    $("header").css("top", "-55px");
+    $("header").css("top", "-65px");
   } else {
     $("header").css("top", "0px");
   }
